@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tus Notas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="login.html" id="logout">Cerrar Sesión</a></li>
+        </ul>
+    </nav>
+
+    <section class="notes">
+        <h1>Tus Notas</h1>
+        <h4>La aplicación cuya función practica es almacenar notas</h4>
+
+        <!-- Formulario para crear nuevas notas -->
+        <form id="noteForm">
+            <label for="note">Escribe tu nota:</label>
+            <textarea id="note" required></textarea>
+            <button type="submit">Guardar Nota</button>
+        </form>
+
+        <!-- Formulario para editar una nota -->
+        <form id="editForm" style="display:none;">
+            <label for="editNote">Edita tu nota:</label>
+            <textarea id="editNote" required></textarea>
+            <button type="submit">Guardar Cambios</button>
+            <button type="button" id="cancelEdit">Cancelar</button>
+        </form>
+
+        <h2>Notas Guardadas</h2>
+        <ul id="notesList"></ul>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>

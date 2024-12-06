@@ -1,0 +1,15 @@
+{
+  "name": "notas-app",
+  "version": "1.0.0",
+  "description": "Aplicación de notas con Node.js, Express y SQLite3",
+  "main": "server.js",
+  "scripts": {
+    "start": "node setup.js"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "express": "^4.18.2",
+    "session": "^0.1.0",
+    "sqlite3": "^5.1.6"
+  }
+}
